@@ -1,0 +1,5 @@
+location: /c/Users/Dev/Desktop/demo-project/deploy_with_docker_container
+version: 1.0.0
+destination: /home/emmanuel
+docker_password: enter_docker_password
+user_groups: adm,docker
