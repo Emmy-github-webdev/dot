@@ -1,0 +1,23 @@
+---
+- name: Install node and npm
+  hosts: aws_ec2
+  become: yes
+  gather_facts: False
+  tasks:
+    - name: Update apt repo and cache
+      apt: update_cache=yes force_apt_get=yes
+    - name: Install node and npm
+      apt: 
+        pkg:
+          - nodejs
+          - npm
+    - name: Install Ruby2.0
+      apt:
+        pkg:
+          - ruby2.0
+          - ruby2.0-dev
+          - rubygems
+    - name: Install Jekyll
+      Gem:
+        -  Jekyll
+   
