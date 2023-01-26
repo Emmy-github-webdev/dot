@@ -20,4 +20,3 @@
     - name: Install Jekyll
       Gem:
         -  Jekyll
-   
